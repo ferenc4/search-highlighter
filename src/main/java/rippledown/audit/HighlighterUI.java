@@ -4,13 +4,8 @@ import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.text.BadLocationException;
-import javax.swing.text.DefaultHighlighter;
 import javax.swing.text.DefaultHighlighter.DefaultHighlightPainter;
-import javax.swing.text.Document;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.*;
 import java.util.List;
 
 /**
@@ -35,6 +30,7 @@ public class HighlighterUI {
         component.setLayout(new BorderLayout());
         component.add(searchBar, BorderLayout.NORTH);
         component.add(detailPane, BorderLayout.CENTER);
+        detailPane.setEditable(false);
         detailPane.setText(TEXT);
 
         searchBar.getDocument().addDocumentListener(new SearchbarListener(searchBar, detailPane));

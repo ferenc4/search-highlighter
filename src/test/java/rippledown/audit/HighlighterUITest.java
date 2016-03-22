@@ -39,6 +39,11 @@ public class HighlighterUITest {
         }, 1_000);
     }
 
+    @Test
+    public void detailPaneShouldNotBeEditable() {
+        fixture.textBox(HighlighterUI.DETAIL_PANE).requireNotEditable();
+    }
+
     @Before
     public void setup() {
         JFrame frame = GuiActionRunner.execute(new GuiQuery<JFrame>() {

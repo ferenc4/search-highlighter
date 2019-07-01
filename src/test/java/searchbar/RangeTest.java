@@ -1,4 +1,4 @@
-package rippledown.audit;
+package searchbar;
 
 import org.assertj.core.api.Assertions;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package rippledown.audit;
+package searchbar;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;

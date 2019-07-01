@@ -1,4 +1,4 @@
-package rippledown.audit;
+package searchbar;
 
 /**
  * Created by Ferenc Fazekas on 3/16/2016.
